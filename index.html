@@ -5,8 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="design.css">
     <title>The Techonomic Post</title>
+
+    <style>
+         h1 {
+            text-align: center; /* Center align the text */
+            font-size: 20px; /* Increase font size */
+            color: white;
+            font-family: Arial;
+            font-weight: 200;
+            padding-top: 30px;
+        }
+
+        nav {
+            position: absolute; /* Position the navigation menu absolutely */
+  
+            top: 10px;
+            width: 100%;
+            z-index: 1000; /* Ensure the navigation menu appears in front of other elements */
+        }
+
+        .menu-items {
+            display: none; /* Hide the menu items by default */
+            background-color: black; /* Set the background color to black */
+             /* Add some padding */
+            position: fixed; /* Fix the position of the menu */
+            top: 0; /* Align the menu to the top */
+            left: 0; /* Align the menu to the left */
+            right: 0;
+            width: 1500px; /* Cover the entire width of the viewport */
+            height: 100vh; /* Cover the entire height of the viewport */
+            box-sizing: border-box;
+        }
+
+        .checkbox:checked + .navbar .menu-items {
+            display: block;
+        }
+
+        
+
+        
+    </style>
+
 </head>
-<!-- <body>
-   
-</body>  -->
+<body>
+    <h1>The Techonomic Post</h1>
+
+    <nav>
+        <div class="navbar">
+          <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+            <div class="menu-items">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">blogs</a></li>
+              <li><a href="#">portfolio</a></li>
+              <li><a href="#">contact</a></li>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.2.9/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/udQepOQL3Almh62U/scene.splinecode"></spline-viewer>
+
+
+
+</body> 
 </html>
