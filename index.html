@@ -21,7 +21,7 @@
   
             top: 10px;
             width: 100%;
-            z-index: 1000; /* Ensure the navigation menu appears in front of other elements */
+            z-index: 999; /* Ensure the navigation menu appears in front of other elements */
         }
 
         .menu-items {
@@ -39,6 +39,35 @@
 
         .checkbox:checked + .navbar .menu-items {
             display: block;
+        }
+
+        .container{
+            z-index: 1000;
+            padding: 20px;
+            color: white;
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+
+        .container1{
+            background-color: rgb(37, 37, 37);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 65%;
+            margin: 0 auto;
+
+        }
+
+        .container_header{
+            color: lightgray;
+            text-align: center;
+            text-decoration: wavy;
+            padding-left: 200px;
+            padding-right: 200px;
+            font-size: 60px;
+            padding-bottom: 30px;
+            padding-top: 100px;
         }
 
         
@@ -70,7 +99,17 @@
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.2.9/build/spline-viewer.js"></script>
     <spline-viewer url="https://prod.spline.design/udQepOQL3Almh62U/scene.splinecode"></spline-viewer>
 
+    <div class="container_header">
+        <p>"The Difference Between Wealth and Poverty is Financial Literacy"</p>
+    </div>
 
+    <div class="container1">
+        <p>Week 1 Vocabulary</p>
+
+        
+
+
+    </div>
 
 </body> 
 </html>
